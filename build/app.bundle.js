@@ -29197,23 +29197,23 @@
 	};
 	
 	var tilesData = [{
-	  img: '../assets/stream_logo.png',
+	  img: 'assets/stream_logo.png',
 	  title: 'I <3 Men',
 	  author: 'Solstis'
 	}, {
-	  img: '../assets/stream_logo.png',
+	  img: 'assets/stream_logo.png',
 	  title: 'Happy Raver Mix',
 	  author: 'it me'
 	}, {
-	  img: '../assets/stream_logo.png',
+	  img: 'assets/stream_logo.png',
 	  title: 'I just n e e d death',
 	  author: 'kia sorento'
 	}, {
-	  img: '../assets/stream_logo.png',
+	  img: 'assets/stream_logo.png',
 	  title: 'Industrial Bieber',
 	  author: 'Kleen Pockts'
 	}, {
-	  img: '../assets/stream_logo.png',
+	  img: 'assets/sky.jpg',
 	  title: 'Walt Disney Is Dead',
 	  author: 'Killinois'
 	}];

@@ -20,23 +20,23 @@ const styles = {
 
 const tilesData = [
   {
-    img: '../assets/stream_logo.png',
+    img: 'assets/sky.jpg',
     title: 'I <3 Men',
     author: 'Solstis',
   },  {
-    img: '../assets/stream_logo.png',
+    img: 'assets/sky.jpg',
     title: 'Happy Raver Mix',
     author: 'it me',
   },  {
-    img: '../assets/stream_logo.png',
+    img: 'assets/sky.jpg',
     title: 'I just n e e d death',
     author: 'kia sorento',
   },  {
-    img: '../assets/stream_logo.png',
+    img: 'assets/sky.jpg',
     title: 'Industrial Bieber',
     author: 'Kleen Pockts',
   },  {
-    img: '../assets/stream_logo.png',
+    img: 'assets/sky.jpg',
     title: 'Walt Disney Is Dead',
     author: 'Killinois',
   }
