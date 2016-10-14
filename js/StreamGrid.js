@@ -20,23 +20,23 @@ const styles = {
 
 const tilesData = [
   {
-    img: 'assets/sky.jpg',
+    img: '/streams/assets/sky.jpg',
     title: 'I <3 Men',
     author: 'Solstis',
   },  {
-    img: 'assets/sky.jpg',
+    img: '/streams/assets/sky.jpg',
     title: 'Happy Raver Mix',
     author: 'it me',
   },  {
-    img: 'assets/sky.jpg',
+    img: '/streams/assets/sky.jpg',
     title: 'I just n e e d death',
     author: 'kia sorento',
   },  {
-    img: 'assets/sky.jpg',
+    img: '/streams/assets/sky.jpg',
     title: 'Industrial Bieber',
     author: 'Kleen Pockts',
   },  {
-    img: 'assets/sky.jpg',
+    img: '/streams/assets/sky.jpg',
     title: 'Walt Disney Is Dead',
     author: 'Killinois',
   }
@@ -48,7 +48,7 @@ const tilesData = [
 const StreamGrid = () => (
   <div style={styles.root}>
     <GridList
-      cellHeight={180}
+      cellHeight={200}
       cols={4}
       padding={15}
       style={styles.gridList}
@@ -61,7 +61,7 @@ const StreamGrid = () => (
           subtitle={<span>by <b>{tile.author}</b></span>}
           actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
         >
-          <img src={tile.img} />
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flemiesz%2Fvideos%2F10154097782067153%2F&show_text=0&width=400" width="400" height="400" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
         </GridTile>
       ))}
     </GridList>
