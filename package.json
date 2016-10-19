@@ -24,5 +24,9 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "firebase": "^3.5.0",
+    "react-facebook-player": "0.0.7"
   }
 }

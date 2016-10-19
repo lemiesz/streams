@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Stream Team</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <script>
-window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '243020216100318',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-    FB.AppEvents.logPageView();
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+<head>
+	<meta charset="UTF-8" />
+	<title>Stream Team</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Firebase JS -->
+</head>
+
+<body>
+	<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+	<script>
+     var config = {
+      apiKey: "AIzaSyC_3CzhKqkD8q25r6SgjKvZzdDVxmzAl5s",
+      authDomain: "seattlestreams.firebaseapp.com",
+      databaseURL: "https://seattlestreams.firebaseio.com",
+      storageBucket: "seattlestreams.appspot.com",
+    };
+    firebase.initializeApp(config);
    </script>
-  <div id="app"></div>
-  <script src="build/app.bundle.js"></script>
+	<div id="fb-root"></div>
+	<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '243020216100318',
+        xfbml      : true,
+        version    : 'v2.5'
+      });
+    
+      // Get Embedded Video Player API Instance
+      var my_video_player;
+      FB.Event.subscribe('xfbml.ready', function(msg) {
+        if (msg.type === 'video') {
+          my_video_player = msg.instance;
+        }
+      });
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+	<div id="app"></div>
+	<script src="build/app.bundle.js"></script>
 </body>
 
 </html>
