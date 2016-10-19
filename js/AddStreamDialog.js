@@ -72,7 +72,7 @@ class AddStreamDialog extends React.Component {
         var actions = <RaisedButton onTouchTap={this.onSubmitDialog} primary={true} label="Submit Stream" />;
         return (
             <Dialog
-                title="Dialog With Actions"
+                title="Add Your Stream"
                 actions={actions}
                 modal={false}
                 open={this.state.open}
