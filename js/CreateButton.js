@@ -48,6 +48,7 @@ class CreateButton extends React.Component {
       <div>
         <RaisedButton
           style={this.props.over}
+          primary={true}
           onTouchTap={this.handleTouchTap}
           label={"Create Stream"} />
         <Popover
